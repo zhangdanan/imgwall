@@ -95,7 +95,7 @@
 		function load(res) {
 			// 遍历对象然后添加到 res[i].download_url
 			$.each(res, function (i, ele) {
-				$("#imghub").prepend('<img src="' + 'http://img2.lbcolor.cn/' + res[i].download_url +
+				$("#imghub").append('<img src="' + 'http://img2.lbcolor.cn/' + res[i].download_url +
 					'"  data-largesrc="' + 'http://img2.lbcolor.cn/' + res[i].download_url +
 					'"' + 'alt=Pic "' + (i + 1) + '"' + '>')
 			})
